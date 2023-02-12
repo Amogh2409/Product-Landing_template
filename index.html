@@ -1,189 +1,378 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>FCC: Technical Documentation Page</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <link rel="stylesheet" href="styles.css">
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="page-wrap">
-    <div class="row">
-      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-        <nav id="navbar" class="navbar-movil navbar-expand-sm">
-          <header class="title"><i class="fab fa-js-square"></i>Doc</header>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMini" aria-controls="navMini" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                        </button>
-          <div class="collapse navbar-collapse" id="navMini">
-            <ul class="nav flex-column mt-4">
-              <li class="nav-item"><a class="nav-link" href="#Introduction">Introduction</a></li>
-              <li class="nav-item"><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
-              <li class="nav-item"><a class="nav-link" href="#Javascript_and_Java">JavaScript and Java</a></li>
-              <li class="nav-item"><a class="nav-link" href="#Hello_world">Hello world</a></li>
-              <li class="nav-item"><a class="nav-link" href="#Variables">Variables</a></li>
-              <li class="nav-item"><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
-            </ul>
-          </div>
-        </nav>
-        <section class="footer-wrap">
+    
+<header id="header">
+			<div id="hamburger-nav-bar-line"></div>
+			<div id="navigation">
+				<div class="logo">
+					<img
+						id="header-img"
+						src="https://i.postimg.cc/dtBS076P/shield-round.png"
+						alt="company logo"
+					/>
+					<p id="logo-name">CyberShield</p>
+				</div>
 
-        </section>
-      </div>
-      <div class="col-xl-10 col-lg-9 col-md-8 col-sm-7">
-        <main id="main-doc">
-            <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <hr>
-            <article>
-              <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide
-                programmatic control over them.</p>
-              <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing
-                it with additional objects; for example:</p>
-              <li>
-                Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                as mouse clicks, form input, and page navigation.
-              </li>
-              <li>
-                Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation
-                to another of the application, or perform file manipulations on a server.
-              </li>
-            </article>
-          </section>
-          <section class="main-section" id="What_you_should_already_know">
-            <header>What you should already know</header>
-            <hr>
-            <p>This guide assumes you have the following basic background:</p>
-            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-            <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
-          </section>
-          <section class="main-section" id="Javascript_and_Java">
-            <header>Javascript and Java</header>
-            <hr>
-            <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax,
-              naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
-            <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object
-              model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative
-              requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
-            <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement
-              interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
-          </section>
-          <section class="main-section" id="Hello_world">
-            <header>Hello world</header>
-            <hr>
-            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-            <code>function greetMe(yourName) {
-    alert("Hello " + yourName); 
-} 
-greetMe("World");</code>
-          </section>
-          <section class="main-section" id="Variables">
-            <header>Variables</header>
-            <hr>
-            <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
-            <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the
-              characters "a" through "z" (lowercase).</p>
-            <code>var num = 5 ; var name = "David" ; let _width = 193.5 </code>
-            <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
-          </section>
-          <section class="main-section" id="Declaring_variables">
-            <header>Declaring variables</header>
-            <hr>
-            <p>You can declare a variable in three ways:</p>
-            <p>With the keyword var. For example,</p>
-            <code>var x = 42.</code>
-            <p>This syntax can be used to declare both local and global variables.</p>
-            <p>By simply assigning it a value. For example,</p>
-            <code>x = 42.</code>
-            <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
-            <p>With the keyword let. For example,</p>
-            <code>let y = 13.</code>
-            <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
-          </section>
-          <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <hr>
-            <article>
-              <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide
-                programmatic control over them.</p>
-              <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing
-                it with additional objects; for example:</p>
-              <li>
-                Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                as mouse clicks, form input, and page navigation.
-              </li>
-              <li>
-                Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation
-                to another of the application, or perform file manipulations on a server.
-              </li>
-            </article>
-          </section>
-          <section class="main-section" id="What_you_should_already_know">
-            <header>What you should already know</header>
-            <hr>
-            <p>This guide assumes you have the following basic background:</p>
-            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-            <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
-          </section>
-          <section class="main-section" id="Javascript_and_Java">
-            <header>Javascript and Java</header>
-            <hr>
-            <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax,
-              naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
-            <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object
-              model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative
-              requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
-            <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement
-              interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
-          </section>
-          <section class="main-section" id="Hello_world">
-            <header>Hello world</header>
-            <hr>
-            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-            <code>function greetMe(yourName) {
-    alert("Hello " + yourName); 
-} 
-greetMe("World");</code>
-          </section>
-          <section class="main-section" id="Variables">
-            <header>Variables</header>
-            <hr>
-            <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
-            <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the
-              characters "a" through "z" (lowercase).</p>
-            <code>var num = 5 ; var name = "David" ; let _width = 193.5 </code>
-            <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
-          </section>
-          <section class="main-section" id="Declaring_variables">
-            <header>Declaring variables</header>
-            <hr>
-            <p>You can declare a variable in three ways:</p>
-            <p>With the keyword var. For example,</p>
-            <code>var x = 42.</code>
-            <p>This syntax can be used to declare both local and global variables.</p>
-            <p>By simply assigning it a value. For example,</p>
-            <code>x = 42.</code>
-            <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
-            <p>With the keyword let. For example,</p>
-            <code>let y = 13.</code>
-            <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
-          </section>
-        </main>
-      </div>
-    </div>
-  </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+				<nav id="nav-bar">
+					<label for="hamburger-checkbox" id="ham-nav-icon" aria-hidden="true"
+						>&#9776;</label
+					>
+					<input type="checkbox" id="hamburger-checkbox" aria-hidden="true" />
+					<ul id="nav-bar-list" class="nobullets">
+						<li><a class="link nav-link" href="#home"> Home </a></li>
+						<li>
+							<a class="link nav-link" href="#services"> Services </a>
+						</li>
+						<li><a class="link nav-link" href="#whyus"> Why Us </a></li>
+						<li>
+							<a class="link nav-link" href="#testimonials">
+								Testimonials
+							</a>
+						</li>
+						<li><a class="link nav-link" href="#contact"> Contact </a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section id="home" class="home-bg">
+				<div class="container">
+					<h1 class="main-title">
+						<span class="title-text">Industry leading</span>
+						<span class="title-text">cyber security consulting</span>
+					</h1>
+					<p class="lead">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
+						vitae, nostrum assumenda sunt maxime corporis exercitationem dolore
+						suscipit ratione similique fugit nulla esse sit veniam repellat vel
+						ipsum natus distinctio debitis itaque inventore maiores rerum autem
+						nobis? Maxime distinctio, libero unde, mollitia temporibus!
+					</p>
+					<a class="btn link" href="#contact">Talk to us</a>
+				</div>
+			</section>
+			<section id="services" class="section-bg">
+				<div class="container">
+					<h2 class="section-title">Services</h2>
+					<p class="section-description">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
+						vitae, nostrum assumenda sunt maxime corporis exercitationem dolore
+						suscipit ratione similique fugit nulla esse sit veniam repellat vel
+						ipsum natus!
+					</p>
+					<div class="flex-services">
+						<div class="flex-box">
+							<img
+								class="service-icon"
+								aria-hidden="true"
+								src="https://i.postimg.cc/brfFZk48/icon-shield.png"
+								alt="shield-icon"
+							/>
+							<h3 class="service-title">Cyber security risk assessment</h3>
+							<p class="service-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+								cupiditate quisquam consectetur ducimus ipsum doloremque.
+							</p>
+						</div>
+						<div class="flex-box">
+							<img
+								class="service-icon"
+								aria-hidden="true"
+								src="https://i.postimg.cc/Gp9fVck0/icon-mag.png"
+								alt="magnifying-glass-icon"
+							/>
+							<h3 class="service-title">
+								Internal and External vulnerability scan
+							</h3>
+							<p class="service-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+								cupiditate quisquam consectetur ducimus ipsum doloremque.
+							</p>
+						</div>
+						<div class="flex-box">
+							<img
+								class="service-icon"
+								aria-hidden="true"
+								src="https://i.postimg.cc/25JtfPw1/icon-comp.png"
+								alt="rectangle-icon with an arrow"
+							/>
+							<h3 class="service-title">Compliance assessment</h3>
+							<p class="service-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+								cupiditate quisquam consectetur ducimus ipsum doloremque.
+							</p>
+						</div>
+						<div class="flex-box">
+							<img
+								class="service-icon"
+								aria-hidden="true"
+								src="https://i.postimg.cc/pLs7s95Y/icon-docs.png"
+								alt="document-folders-icon"
+							/>
+							<h3 class="service-title">Information security documentation</h3>
+							<p class="service-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+								cupiditate quisquam consectetur ducimus ipsum doloremque.
+							</p>
+						</div>
+						<div class="flex-box">
+							<img
+								class="service-icon"
+								aria-hidden="true"
+								src="https://i.postimg.cc/524T55y2/icon-key.png"
+								alt="key-icon"
+							/>
+							<h3 class="service-title">Data encryption</h3>
+							<p class="service-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+								cupiditate quisquam consectetur ducimus ipsum doloremque. Labore
+								libero quam veniam.
+							</p>
+						</div>
+						<div class="flex-box">
+							<img
+								class="service-icon"
+								aria-hidden="true"
+								src="https://i.postimg.cc/TwD42C7C/icon-people.png"
+								alt="people-icon"
+							/>
+							<h3 class="service-title">
+								Security and cyber awarness training
+							</h3>
+							<p class="service-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+								cupiditate quisquam consectetur ducimus ipsum doloremque.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="whyus" class="section-bg grey-bg">
+				<div class="container">
+					<h2 class="section-title">Why us</h2>
+					<p class="section-description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+						tempore fugit, hic minima illum illo inventore aperiam iste
+						excepturi eligendi quod magni molestias nobis repellendus neque,
+						dicta earum eius soluta!
+					</p>
+					<div class="video-wrap">
+						<iframe
+							id="video"
+							height="360"
+							src="https://youtu.be/_MwvEIOlTZ0"
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+				<a class="btn btn-why-us link" href="#contact">Get in Touch</a>
+			</section>
+			<section id="testimonials" class="section-bg">
+				<div class="container">
+					<h2 class="section-title">Testimo&shy;nials</h2>
+					<div class="flex-testimonials">
+						<div class="flex-box person-box">
+							<img
+								class="person-img"
+								src=""
+								alt="Image of AI generated person"
+							/>
+							<p class="testimonial-quote">
+								"Lorem ipsum sit amet consec tetur adipi sicing elit. Dignis
+								simos, excepturi eius!"
+							</p>
+							<div class="person-identity">
+								<p class="person-name">Lorem, ipsum.</p>
+								<p class="person-position">
+									Lorem ipsum dolor sit amet.
+								</p>
+							</div>
+						</div>
+						<div class="flex-box person-box">
+							<img
+								class="person-img"
+								src="https://i.postimg.cc/3J7c7jgF/person2.jpg"
+								alt="image of AI generated person"
+							/>
+							<p class="testimonial-quote">
+								"Lorem ipsum dolor sit amet consec tetur adipi sicing elit.
+								Illo, fugit. "
+							</p>
+							<div class="person-identity">
+								<p class="person-name">Lorem, ipsum dolor.</p>
+								<p class="person-position">
+									Lorem ipsum dolor sit amet.
+								</p>
+							</div>
+						</div>
+						<div class="flex-box person-box">
+							<img
+								class="person-img"
+								src="https://i.postimg.cc/sf5NtHZ2/person3.jpg"
+								alt="Image of AI generated person"
+							/>
+							<p class="testimonial-quote">
+								"Lorem, ipsum dolor sit amet consectetur elit. Natus omnis
+								magni, incidunt alias in quos non dicta!"
+							</p>
+							<div class="person-identity">
+								<p class="person-name">Lorem, ipsum dolor.</p>
+								<p class="person-position">Lorem ipsum dolor sit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="section-bg grey-bg">
+				<div class="container">
+					<h2 class="section-title">Contact Us</h2>
+					<div class="flex-contact">
+						<p class="section-description">
+							Book your cosultation or send us a message!
+							<span>We answer all enquiries within two business days.</span>
+						</p>
+						<div>
+							<form
+								class="contact-form"
+								id="form"
+								action="https://www.freecodecamp.com/email-submit"
+							>
+								<label for="name" id="name-label" class="sr-only"
+									>Enter your name</label
+								>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									placeholder="Your name"
+									class="form-control"
+									required
+								/>
+								<label for="email" id="email-label" class="sr-only"
+									>Enter your email</label
+								>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									placeholder="Your email"
+									class="form-control"
+									required
+								/>
+								<label for="your-message" class="sr-only"
+									>Enter your message</label
+								>
+								<textarea
+									id="your-message"
+									name="message"
+									class="form-control"
+									placeholder="Your message"
+									required
+								></textarea>
+								<div class="checkbox-div">
+									<input
+										type="checkbox"
+										id="newsletter"
+										name="newsletter"
+										value="newsletter"
+									/>
+									<label for="newsletter" id="subscribe-label"
+										>Subscribe me to monthly newsletter</label
+									>
+								</div>
+								<input
+									id="submit"
+									type="submit"
+									value="Send message"
+									class="btn btn-contact"
+								/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="company-info">
+				<div>
+					<ul class="footer-list nobullets">
+						<li>&copy; CyberShield</li>
+						<li>All Rights Reserved</li>
+						<li>2023</li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="column-title">Our Location</h4>
+					<hr class="divider" />
+					<ul class="footer-list nobullets">
+						<li>Main Road</li>
+						<li>Madan mahal</li>
+						<li>Jabalpur, MP</li>
+						<li>India</li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="column-title">Quick Links</h4>
+					<hr class="divider" />
+					<ul class="footer-list nobullets">
+						<li><a class="link" href="#">Help Center</a></li>
+						<li><a class="link" href="#">Terms & Conditions</a></li>
+						<li><a class="link" href="#">Privacy Policy</a></li>
+					</ul>
+					<div class="link-icons">
+						<a class="link" href="#">
+							<p class="sr-only">link to company's twitter account</p>
+							<i class="fa fa-twitter fa-lg" aria-hidden="true"></i
+						></a>
+						<a class="link" href="#">
+							<p class="sr-only">link to company's facebook account</p>
+							<i class="fa fa-facebook fa-lg" aria-hidden="true"></i
+						></a>
+						<a class="link" href="#">
+							<p class="sr-only">link to company's instagram account</p>
+							<i class="fa fa-instagram fa-lg" aria-hidden="true"></i
+						></a>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="webpage-info">
+				<div class="attribution">
+					<p>Images:</p>
+					<p>
+						<a class="link" href="https://pixabay.com/" target="_blank"
+							>pixabay,</a
+						>
+					</p>
+					<p>
+						<a
+							class="link"
+							href="https://boredhumans.com/faces.php"
+							target="_blank"
+							>boredhumans.com</a
+						>
+					</p>
+				</div>
+				<div class="creator">
+					<p>Created by Amogh</p>
+					<div class="creator-links">
+						<a class="link" href="https://github.com/Amogh2409" target="_blank">
+							<p class="sr-only">link to Amogh Saxena github page</p>
+							<i class="fa fa-github fa-lg" aria-hidden="true"></i
+						></a>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 </body>
-
 </html>
